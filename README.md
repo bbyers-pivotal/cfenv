@@ -52,7 +52,7 @@ $ cf push
  * ```while true; do sleep 1; curl http://pivotal-cfenv.local.pcfdev.io; echo ''; done```
 
 ### Scale App Horizontally
-Observe the output from the command windows. Notice how the number of app instances
+Observe the output from the command windows. Notice how the number of app instances changes
 ```
 $ cf scale pivotal-cfenv -i 5
 ```
