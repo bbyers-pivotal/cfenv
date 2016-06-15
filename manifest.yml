@@ -1,5 +1,5 @@
 ---
 applications:
-- name: cwest-cfenv
+- name: pivotal-cfenv
   memory: 20M
   command: ruby ./app.rb
