@@ -1,8 +1,8 @@
 ---
 applications:
-- name: cwest-cfenv
+- name: pivotal-cfenv
   instances: 6
   memory: 50M
   command: ruby ./app.rb
   services:
-    - cwest-cfenv-redis
+    - myredis
