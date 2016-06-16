@@ -19,10 +19,14 @@ Example sinatra app which exposes the [Cloud Foundry](http://cloudfoundry.org) i
 * After PCF Dev is installed, run ```$ cf dev start``` and wait for the VM to start up
 
 #### Install CF Autopilot Plugin
-```
-$ go get github.com/concourse/autopilot
-$ cf install-plugin $GOPATH/bin/autopilot
-```
+This plugin provides the ```$ cf zero-downtime-push``` command
+
+Download autopilot
+* https://github.com/concourse/autopilot/releases/download/0.0.2/autopilot-darwin
+
+Install the plugin __(requires sudo)__
+* chmod 655 /path/to/autopilot-darwin
+* sudo cf install-plugin /path/to/autopilot-darwin
 
 #### Create Redis Service
 ```
@@ -56,6 +60,9 @@ Observe the output from the command windows. Notice how the number of app instan
 ```
 $ cf scale pivotal-cfenv -i 5
 ```
+### Kill an instance
+Kill an application instance to show resiliency
+* http://pivotal-cfenv.local.pcfdev.io/oops
 
 ### Showing blue/green deployment between branches
 With the existing monitoring windows still running...
