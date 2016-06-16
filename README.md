@@ -25,8 +25,8 @@ Download autopilot
 * https://github.com/concourse/autopilot/releases/download/0.0.2/autopilot-darwin
 
 Install the plugin __(requires sudo)__
-* chmod 655 /path/to/autopilot-darwin
-* sudo cf install-plugin /path/to/autopilot-darwin
+* ```chmod 655 /path/to/autopilot-darwin```
+* ```sudo cf install-plugin /path/to/autopilot-darwin```
 
 #### Create Redis Service
 ```
