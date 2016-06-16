@@ -42,3 +42,7 @@ get '/' do
   	visits:   Analytics.instance.visit!
   )
 end
+
+get '/oops' do
+  Process.exit(1);
+end
